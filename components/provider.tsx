@@ -2,7 +2,7 @@
 
 import { SessionProvider } from "next-auth/react";
 
-const Provider = ({ children }: any) => {
+const Provider: typeof SessionProvider = ({ children }) => {
   return <SessionProvider>{children}</SessionProvider>;
 };
 
